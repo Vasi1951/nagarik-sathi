@@ -203,7 +203,6 @@ export default function AIChat({ ttsEnabled = false }) {
               </div>
             )}
             <div
-              // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: formatText(msg.text) }}
             />
           </div>

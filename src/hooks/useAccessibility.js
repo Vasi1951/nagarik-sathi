@@ -68,7 +68,7 @@ export function useVoiceInput(onResult) {
     recognition.onend = () => setIsListening(false);
 
     recognition.start();
-  }, [isSupported, onResult]);
+  }, [isSupported, onResult, SpeechRecognition]);
 
   const stop = useCallback(() => {
     setIsListening(false);

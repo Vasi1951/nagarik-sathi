@@ -33,11 +33,7 @@ const MOCK_COMPLAINTS = [
   },
 ];
 
-const STATUS_COLORS = {
-  done: 'var(--color-success)',
-  active: 'var(--color-accent-primary)',
-  pending: 'var(--color-border)',
-};
+
 
 /**
  * ComplaintTracker component - Shows status of previously filed complaints.
@@ -56,7 +52,7 @@ export default function ComplaintTracker() {
       )
     : MOCK_COMPLAINTS;
 
-  const selected = MOCK_COMPLAINTS.find((c) => c.id === selectedId);
+
 
   const getOverallStatus = (steps) => {
     const done = steps.filter((s) => s.status === 'done').length;
